@@ -1,0 +1,45 @@
+.LoginForm{
+    margin:20px;
+    justify-content: center;
+    background-color: #B0E0E6;
+}
+.LoginForm-wrapper-div{
+    width: 50%;
+    margin:0 auto;
+    
+}
+
+.LoginForm-label{
+    margin-left: 10px;
+    font-size: large;
+    display: block;
+    color: black;
+}
+.LoginForm-input{
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+.LoginForm-button{
+    background-color: #4169E1;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-color: #4169E1;
+}
+.LoginForm-button:hover{
+    background-color: #132e7c;
+    color: white;
+    border-color: #132e7c;
+}
+.LoginForm-error{
+    color: red;
+    margin: 10px 10px;
+    
+}

@@ -1,0 +1,16 @@
+.Layout-nav{
+    background-color: skyblue;
+    text-align: right;
+}
+.Layout-header{
+    text-align: center;
+}
+.Layout-nav-link{
+    margin: 0px 10px;
+    padding: 15px 0px;
+    color: white;
+    font-size: large;
+}
+.Layout-nav-link:hover{
+    color: red;
+}
