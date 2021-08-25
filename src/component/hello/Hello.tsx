@@ -3,6 +3,9 @@
 //     <h1>This is typescript Application</h1>
 // }
 
+
+
+
 // USE OF PROPS
 // function Hello({name}:{name:string}){
 //     return(
@@ -14,16 +17,32 @@
 // export default Hello;
 // ------------------------------------------------------
 
+
+
+
+
+
 // USE OF INTERFACE
-import User from "../interface/Interface";
+import { useState } from "react";
+import {User} from "../interface/Interface";
+import Register from "../register/Register";
 function Hello({ user }: { user: User }) {
+    const [isRegister,setIsRegister]=useState(false);
+
+    const handleClick=()=>{
+        setIsRegister(true)
+    }
   return (
     <>
       <h1>Welcome {user.name}</h1>
-      <h2>Age : {user.age}</h2>
-      <h2>Date of Birth : {user.dateOfBirth.toDateString()}</h2>
+      <h2>Email : {user.email}</h2>
+      <h2>Date of Birth : {user.dateOfBirth}</h2>
+      <button onClick={handleClick}>Register</button>
+      {isRegister?(<Register/>):(null)}
+
     </>
   );
 }
 export default Hello;
-// ------------------------------------------------------
+// ----------------------------------------------------------
+
