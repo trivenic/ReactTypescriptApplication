@@ -61,6 +61,9 @@ function Blogs() {
   }
 
   const handleTextSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+
+    console.log(event.target.value);
+    
     //  if(event.target.value.length>=3){
       const data = blogData?.filter((data) => {
         return data.name.toLowerCase().includes(event.target.value.toLowerCase()) || 
