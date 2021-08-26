@@ -6,7 +6,6 @@ function Home(){
      
     <div className="Home">
         <Layout/>
-       
     </div>
     );
 
